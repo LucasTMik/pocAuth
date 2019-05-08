@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "test-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/testRequest/TestRequestWebPart.js",
+          "manifest": "./src/webparts/testRequest/TestRequestWebPart.manifest.json"
+        }
+      ]
+    },
+    "global-one-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/globalOne/GlobalOneWebPart.js",
+          "manifest": "./src/webparts/globalOne/GlobalOneWebPart.manifest.json"
+        }
+      ]
+    },
+    "global-two-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/globalTwo/GlobalTwoWebPart.js",
+          "manifest": "./src/webparts/globalTwo/GlobalTwoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TestRequestWebPartStrings": "lib/webparts/testRequest/loc/{locale}.js",
+    "GlobalOneWebPartStrings": "lib/webparts/globalOne/loc/{locale}.js",
+    "GlobalTwoWebPartStrings": "lib/webparts/globalTwo/loc/{locale}.js"
+  }
+}
